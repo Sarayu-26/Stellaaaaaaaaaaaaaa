@@ -48,9 +48,6 @@ diamonds_new <- diamonds |>
 ### to plot, summarize, calculate something simple using the diamonds
 ### dataset.
 
-ggplot(data = diamonds_new, aes(x = color)) + 
-         geom_bar() + 
-         theme_bw()
        
 ```
 
@@ -61,6 +58,9 @@ ggplot(data = diamonds_new, aes(x = color)) +
 ### to plot, summarize, calculate something simple using the diamonds
 ### dataset.
 
+ggplot(data = diamonds_new, aes(x = color)) + 
+         geom_bar() + 
+         theme_bw()
 
 ```
 
