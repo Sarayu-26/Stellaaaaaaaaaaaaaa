@@ -38,15 +38,12 @@ library(ggplot2)
 diamonds_new <- diamonds |> 
   filter(carat >= 1)
 
-
-
-
 ```
 
 ## STEP 7: Uh oh, merge conflicts!
 
 ```{r break-it-1}
-sarayu_model<-lm(carat~depth+table+price, data=diamonds)
+sarayu_model<-lm(price~depth+table+carat, data=diamonds)
 summary(sarayu_model)
 
 
