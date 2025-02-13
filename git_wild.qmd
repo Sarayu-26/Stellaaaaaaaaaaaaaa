@@ -57,9 +57,14 @@ summary(sarayu_model)
 
 library(ggplot2)
 
+
 ggplot(data = diamonds, aes(x = cut, fill = cut)) + 
   geom_bar() +  
-  scale_fill_brewer(palette = "Set3") +   
+  scale_fill_manual(values = c("Fair" = "#FF6347",  # Tomato
+                               "Good" = "#4682B4",  # SteelBlue
+                               "Very Good" = "#32CD32",  # LimeGreen
+                               "Premium" = "#FFD700",  # Gold
+                               "Ideal" = "#8A2BE2")) +  # BlueViolet
   labs(title = "Distribution of Diamond Cuts💎💎", 
        x = "Cut Quality", 
        y = "Count") + 
@@ -68,6 +73,10 @@ ggplot(data = diamonds, aes(x = cut, fill = cut)) +
         plot.title = element_text(face = "bold", hjust = 0.5))
 
 
+
+
+```
+```{r}
 
 
 
