@@ -44,13 +44,10 @@ diamonds_new <- diamonds |>
 ## STEP 7: Uh oh, merge conflicts!
 
 ```{r break-it-1}
+
 sarayu_model<-lm(carat~depth+table+price, data=diamonds)
 summary(sarayu_model)
 
- ggplot(data = diamonds_new, aes(x = color)) + 
-         geom_bar() + 
-         theme_bw()
-       
 ```
 
 ## STEP 11: And even more merge conflicts!
