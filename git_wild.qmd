@@ -53,9 +53,21 @@ summary(sarayu_model)
 ## STEP 11: And even more merge conflicts!
 
 ```{r break-it-2}
-### Both partners - delete this comment, then write some code here
-### to plot, summarize, calculate something simple using the diamonds
-### dataset.
+#sarayu code
+
+library(ggplot2)
+
+ggplot(data = diamonds, aes(x = cut, fill = cut)) + 
+  geom_bar() +  
+  scale_fill_brewer(palette = "Set3") +   
+  labs(title = "Distribution of Diamond Cuts💎💎", 
+       x = "Cut Quality", 
+       y = "Count") + 
+  theme_minimal(base_size = 14) +  
+  theme(legend.position = "none",  
+        plot.title = element_text(face = "bold", hjust = 0.5))
+
+
 
 
 
